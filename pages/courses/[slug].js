@@ -13,7 +13,7 @@ export default function Course({ course }) {
           image={course.coverImage}
         />
       </div>
-      <Keypoints />
+      <Keypoints points={course.wsl} />
       <Curriculum />
       <Modal />
     </BaseLayout>
