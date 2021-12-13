@@ -1,7 +1,6 @@
 import Image from "next/image";
 
 export default function CourseHero({ title, description, image }) {
-  console.log(image);
   return (
     <section>
       <div className="relative bg-white overflow-hidden">
@@ -58,8 +57,6 @@ export default function CourseHero({ title, description, image }) {
             src={image}
             alt={title}
             layout="fill"
-            width="200"
-            height="230"
           />
         </div>
       </div>
