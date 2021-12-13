@@ -14,7 +14,7 @@ export default function Course({ course }) {
         />
       </div>
       <Keypoints points={course.wsl} />
-      <Curriculum />
+      <Curriculum locked={true} />
       <Modal />
     </BaseLayout>
   );
