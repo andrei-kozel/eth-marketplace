@@ -4,7 +4,7 @@ import { getAllCourses } from "@content/courses/fetcher";
 import { useWeb3 } from "@components/providers";
 
 export default function Home({ courses }) {
-  const { test } = useWeb3();
+  const { web3, isLoading } = useWeb3();
 
   return (
     <>
