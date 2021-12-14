@@ -1,11 +1,12 @@
 import "../styles/globals.css";
-import { BaseLayout } from "@components/ui/layout";
 
 function MyApp({ Component, pageProps }) {
+  const Layout = Component.Layout;
+
   return (
-    <BaseLayout>
+    <Layout>
       <Component {...pageProps} />
-    </BaseLayout>
+    </Layout>
   );
 }
 
