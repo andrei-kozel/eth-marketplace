@@ -1,7 +1,9 @@
-import { handler as createUseAccount } from "./useAccount";
+import { handler as createUseAccountHook } from "./useAccount";
+import { handler as createNetorkHook } from "./useNetwork";
 
 export const setupHooks = (...deps) => {
   return {
-    useAccount: createUseAccount(...deps),
+    useAccount: createUseAccountHook(...deps),
+    useNetwork: createNetorkHook(...deps),
   };
 };
